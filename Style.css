@@ -3,7 +3,16 @@ h1{
     font-family: "Open Sans", sans-serif;
     background-color: black;
     color:white;
+    letter-spacing: -.5px;
 }
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -.5px;
+}
+
+
+
 
 .home-button {
     width: 50px;
@@ -24,5 +33,18 @@ nav li{
 }
 
 img{ 
-    width: 600px;  
+    width: 600px; 
 }
+a[href*= "http"]{
+    padding-left: .59em;
+    text-decoration: none;
+    outline: none;
+    background: url;
+    background-size: .58em .58em;
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    }
+    
+    a:link, a:visited, a:focus {
+        color: #BA7530;
+    }
