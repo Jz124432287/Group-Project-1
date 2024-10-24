@@ -11,6 +11,15 @@ h2{
     letter-spacing: -.5px;
 }
 
+body {
+    margin:0;
+    min-width: auto;
+    max-width: auto;
+    padding:0;
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
 
 
 
@@ -29,6 +38,9 @@ nav{
 
 nav li{
     display:inline;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     margin:50px;
 }
 
@@ -48,3 +60,11 @@ a[href*= "http"]{
     a:link, a:visited, a:focus {
         color: #BA7530;
     }
+
+p{
+    letter-spacing: 1.5px;
+    padding: 10px;
+    float: inherit;
+    width: 47%;
+    margin-left: 26%;
+}
