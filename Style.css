@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 h1{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Kanit", sans-serif;
     background-color: black;
     color:white;
     letter-spacing: -.5px;
 }
 
 h2{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Kanit", sans-serif;
     letter-spacing: -.5px;
 }
 
 body {
     margin:0;
     min-width: auto;
-    max-width: auto;
     padding:0;
     width: auto;
     align-items: center;
@@ -24,16 +22,20 @@ body {
 
 
 .home-button {
-    width: 50px;
+    width: 50px;    
     height: 50px;
-    background-image: url('favicon.jpg');
+    background-image: url('favicon1.jpg');
     background-size: cover;
     display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-top: -18px;
 }
 
 nav{
     list-style-type: none;
-    
+    display: block;
+    unicode-bidi: isolate;
 }
 
 nav li{
@@ -41,8 +43,10 @@ nav li{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin:50px;
+    margin: 5px;
+    height: 15px;
 }
+
 
 img{ 
     width: 600px; 
@@ -62,9 +66,46 @@ a[href*= "http"]{
     }
 
 p{
+    font-family: "Inter", serif;
+    font-size:1.2rem;
     letter-spacing: 1.5px;
-    padding: 10px;
+    padding: 20px;
     float: inherit;
-    width: 47%;
-    margin-left: 26%;
+    width: 35%;
+    margin-left: auto;
+    text-align: left;
+    transform: translateX(-81%);
+}
+
+.sticky-header {
+    background-color:rgb(102, 85, 163);
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: auto;
+  }
+
+  .sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: auto;
+  }
+
+  .sticky-header li {
+    margin-left: 125px;
+  }
+
+  .sticky-header a {
+  text-decoration: none;
+  color: rgb(31, 0, 20);
 }
