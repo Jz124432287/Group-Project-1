@@ -1,3 +1,4 @@
+
 h1{
     font-family: "Kanit", sans-serif;
     background-color: black;
@@ -55,7 +56,7 @@ a[href*= "http"]{
     padding-left: .59em;
     text-decoration: none;
     outline: none;
-    background: url;
+    background: url('icon.png');
     background-size: .58em .58em;
     background-position: 0 2px;
     background-repeat: no-repeat;
@@ -77,8 +78,12 @@ p{
     transform: translateX(-81%);
 }
 
+p::first-line{
+      font-weight: bold;
+}
+
 .sticky-header {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(102, 85, 163);
     color: #ffffff;
     position: sticky;
     top: 0;
@@ -102,7 +107,7 @@ p{
   }
 
   .sticky-header li {
-    margin-left: 50px;
+    margin-left: 125px;
   }
 
   .sticky-header a {
