@@ -49,7 +49,6 @@ nav li{
     height: 15px;
 }
 
-
 .full-page img{
   width: 100%;
   height: 100%;
@@ -82,7 +81,7 @@ p{
 }
 
 p::first-line{
-      font-weight: bold;
+  font-weight: bold;
 }
 
 .sticky-header {
@@ -162,7 +161,7 @@ p::first-line{
 .unique{
   position: relative;
   border:none;
-  background-color: rgb(233, 166, 166);
+  background-color: rgb(240, 158, 158);
   font-size: large;
   width:125px;
   height: 30px;
@@ -171,6 +170,7 @@ p::first-line{
   line-height: 30px;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
+  transform: translateY(-10%);
 }
 
 
