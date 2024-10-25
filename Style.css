@@ -123,6 +123,9 @@ p::first-line{
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+.blank{
+  width: 250px;
+}
 
 .custom-button {
   position: relative;
@@ -169,14 +172,13 @@ p::first-line{
   display: inline-block;
   line-height: 30px;
   color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
   transform: translateY(-10%);
 }
 
 
 .unique:hover {
   background-color: rgb(0, 0, 0);
-  color:white;
   cursor: pointer;
 }
 
