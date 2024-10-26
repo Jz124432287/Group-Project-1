@@ -20,8 +20,6 @@ body {
     text-align: center;
   }
 
-
-
 .home-button {
     width: 50px;    
     height: 50px;
@@ -33,25 +31,10 @@ body {
     margin-top: -18px;
 }
 
-nav{
-    list-style-type: none;
-    display: block;
-    unicode-bidi: isolate;
-    height: 100%;
-}
-
-nav li{
-    display:inline;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    height: 15px;
-}
-
 .full-page img{
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 a[href*= "http"]{
@@ -91,6 +74,7 @@ p::first-line{
     top: 0;
     z-index: 10000;
     width: 100%;
+    height: 100px;
   }
 
   .sticky-header nav {
@@ -184,4 +168,52 @@ p::first-line{
 
 .unique:hover a {
   color: inherit;
+}
+
+.footer-edit{
+  font-family: "Inter", serif;
+  font-size: medium;
+  text-align: center;
+  background-color: black;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.footer-icon{
+  height: 75px;
+  margin: 15px;
+  width: 100px;
+}
+
+.footer-list{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+}
+
+.footer-list a{
+  text-decoration: none;
+  color:white;
+}
+
+.footer-list li{
+  display:inline;
+  position: relative;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.footer-p{
+  font-size: medium;
+  color: white;
+}
+.footer-p2{
+  font-size: medium;
+  color: white;
+  margin-top: -15px;
 }
