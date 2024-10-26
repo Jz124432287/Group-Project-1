@@ -1,34 +1,36 @@
 
 h1{
-    font-family: "Kanit", sans-serif;
-    background-color: black;
-    color:white;
-    letter-spacing: -.5px;
+  font-family: "Kanit", sans-serif;
+  background-color: black;
+  color:white;
+  letter-spacing: -.5px;
 }
 
 h2{
-    font-family: "Kanit", sans-serif;
-    letter-spacing: -.5px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: -.5px;
 }
 
 body {
-    margin:0;
-    min-width: auto;
-    padding:0;
-    width: auto;
-    align-items: center;
-    text-align: center;
+  margin:0;
+  min-width: auto;
+  padding:0;
+  width: auto;
+  align-items: center;
+  text-align: center;
   }
 
 .home-button {
-    width: 50px;    
-    height: 50px;
-    background-image: url('favicon1.jpg');
-    background-size: cover;
-    display: inline-block;
-    vertical-align: middle;
-    background-size: contain;
-    margin-top: -18px;
+  width: 50px;
+  height: 50px;
+  background-image: url('favicon1.jpg');
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  margin: 0 25px;
+  margin-top: -18px;
+  background-repeat: no-repeat;
 }
 
 .full-page img{
@@ -43,36 +45,36 @@ body {
 }
 
 a[href*= "http"]{
-    padding-left: .59em;
-    text-decoration: none;
-    outline: none;
-    background: url('icon.png');
-    background-size: .58em .58em;
-    background-position: 0 2px;
-    background-repeat: no-repeat;
+  padding-left: .59em;
+  text-decoration: none;
+  outline: none;
+  background: url('icon.png');
+  background-size: .58em .58em;
+  background-position: 0 2px;
+  background-repeat: no-repeat;
   }
     
-  a:link, a:visited, a:focus {
-        color: #BA7530;
-  }
+a:link, a:visited, a:focus {
+  color: #BA7530;
+}
 
-  a:hover{
-    text-decoration: underline;
-    color:#BA7530;
-  }
+a:hover{
+  text-decoration: underline;
+  color:#BA7530;
+}
 
 p{
-    font-family: "Inter", serif;
-    font-size:1.2rem;
-    letter-spacing: 1px;
-    line-height: 40px;
-    text-align: left;
-    align-items: center;
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 25px;
+  font-family: "Inter", serif;
+  font-size:1.2rem;
+  letter-spacing: 1px;
+  line-height: 40px;
+  text-align: left;
+  align-items: center;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 25px;
 }
 
 p::first-line{
@@ -80,26 +82,26 @@ p::first-line{
 }
 
 .sticky-header {
-    background-color:rgb(255, 255, 255);
-    color: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 10000;
-    height: 80px;
-  }
+  background-color:rgb(255, 255, 255);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  height: 80px;
+}
 
   nav{
     height: 80px;
   }
   
   .sticky-header nav {
-    font-family:  "Inter", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    margin:0 auto;
+  font-family:  "Inter", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin:0 auto;
   }
 
   .sticky-header ul {
@@ -108,13 +110,14 @@ p::first-line{
     padding: 0;
     display: flex;
     text-align: center;
+    align-items: center;
   }
 
   .sticky-header li {
-    text-align: center;
-    flex-grow: 0;
-    flex-basis: auto;
-    margin: 20px;
+  text-align: center;
+  flex-grow: 0;
+  flex-basis: auto;
+  margin: 0 10px;
   }
 
   .sticky-header a {
@@ -240,11 +243,60 @@ p::first-line{
 }
 
 @media screen and (max-width: 600px){
-  .full-page, .img-adjust, p, nav{
+  .full-page, .img-adjust, p{
     width: 100%;
     height: 50%;
   }
   iframe{
     width: 100%;
+  }
+
+  .sticky-header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .sticky-header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .sticky-header li {
+    margin: -5px 5px;
+  }
+
+  .sticky-header .unique {
+    margin-left: auto;
+    padding: 0px 10px;
+  }
+
+
+  .sticky-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .sticky-header a {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .home-button{
+    margin: 18px 0;
   }
 }
